@@ -70,7 +70,7 @@ type NotesGeneratorSettings = {
     toNote?: MidiValue
 }
 
-// Generates a set pf notes in range from LOWER_NOTE to HIGHER_NOTE.
+// Generates a set of notes in range from LOWER_NOTE to HIGHER_NOTE.
 export function generateNotes({fromNote = LOWER_NOTE, toNote = HIGHER_NOTE}: NotesGeneratorSettings = {}): Note[] {
     return Array(toNote - fromNote + 1).fill(0).map((_, index: number) => fromMidi(fromNote + index))
 }
