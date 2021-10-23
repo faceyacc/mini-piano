@@ -39,7 +39,7 @@ jobs:
       - checkout
       - run:
           name: "Semgrep scan"
-          command: semgrep-agent --baseline-ref main
+          command: semgrep-agent
 workflows:
   main:
     jobs:
