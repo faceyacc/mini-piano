@@ -39,7 +39,7 @@ jobs:
       - checkout
       - run:
           name: "Semgrep scan"
-          command: semgrep-agent
+          command: semgrep-agent --config auto
 workflows:
   main:
     jobs:
