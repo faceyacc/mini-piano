@@ -39,7 +39,7 @@ jobs:
       - checkout
       - run:
           name: "Semgrep scan"
-          command: semgrep-agent --publish-token $SEMGREP_APP_TOKEN
+          command: semgrep-agent --publish-token SEMGREP_APP_TOKEN
 workflows:
   main:
     jobs:
